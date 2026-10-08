@@ -10,5 +10,16 @@ namespace AutoParts.Entity
         public string Nombre { get; set; }
 
         public int EstadoId { get; set; }
+        public Categoria()
+        {
+                
+        }
+        public Categoria(int categoriaId, string nombre, int estadoId)
+        {
+            CategoriaId = categoriaId;
+            Nombre = nombre;
+            EstadoId = estadoId;
+        }
     }
+
 }

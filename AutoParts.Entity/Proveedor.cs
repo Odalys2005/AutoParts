@@ -12,5 +12,18 @@ namespace AutoParts.Entity
         public string Telefono { get; set; }
         public string Correo { get; set; }
         public string Contacto { get; set; }
+        public Proveedor()
+        {
+                
+        }
+        public Proveedor(int proveedorId, string nombreEmpresa, string nIT, string telefono, string correo, string contacto)
+        {
+            ProveedorId = proveedorId;
+            NombreEmpresa = nombreEmpresa;
+            NIT = nIT;
+            Telefono = telefono;
+            Correo = correo;
+            Contacto = contacto;
+        }
     }
 }

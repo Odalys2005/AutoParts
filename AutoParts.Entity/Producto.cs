@@ -15,6 +15,20 @@ namespace AutoParts.Entity
 
         public int CategoriaId { get; set; }
         public int EstadoId { get; set; }
-
+        public Producto()
+        {
+                
+        }
+        public Producto(int productoId, string codigoOEM, string nombre, string descripcion, decimal precioVenta, int tiempoGarantia, int categoriaId, int estadoId)
+        {
+            ProductoId = productoId;
+            CodigoOEM = codigoOEM;
+            Nombre = nombre;
+            Descripcion = descripcion;
+            PrecioVenta = precioVenta;
+            TiempoGarantia = tiempoGarantia;
+            CategoriaId = categoriaId;
+            EstadoId = estadoId;
+        }
     }
 }

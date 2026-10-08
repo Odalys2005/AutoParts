@@ -13,5 +13,19 @@ namespace AutoParts.Entity
 
         public int ProductoId { get; set; }
         public int EstadoId { get; set; }
+        public Inventario()
+        {
+            
+        }
+        public Inventario(int inventarioId, int stockActual, int stockMinimo, int stockMaximo, int productoId, int estadoId)
+        {
+            InventarioId = inventarioId;
+            StockActual = stockActual;
+            StockMinimo = stockMinimo;
+            StockMaximo = stockMaximo;
+            ProductoId = productoId;
+            EstadoId = estadoId;
+        }
     }
+    
 }

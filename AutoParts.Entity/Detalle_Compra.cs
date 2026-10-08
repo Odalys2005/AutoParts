@@ -13,5 +13,18 @@ namespace AutoParts.Entity
 
         public int CompraId { get; set; }
         public int ProductoId { get; set; }
+        public Detalle_Compra()
+        {
+            
+        }
+        public Detalle_Compra(int detalleCompraId, int cantidad, decimal precioCosto, decimal subtotal, int compraId, int productoId)
+        {
+            DetalleCompraId = detalleCompraId;
+            Cantidad = cantidad;
+            PrecioCosto = precioCosto;
+            Subtotal = subtotal;
+            CompraId = compraId;
+            ProductoId = productoId;
+        }
     }
 }

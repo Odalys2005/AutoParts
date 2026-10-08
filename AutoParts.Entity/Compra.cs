@@ -13,5 +13,18 @@ namespace AutoParts.Entity
 
         public int ProveedorId { get; set; }
         public int EmpleadoId { get; set; }
+        public Compra()
+        {
+                
+        }
+        public Compra(int compraId, string numeroComprobante, DateTime fechaCompra, decimal totalCompra, int proveedorId, int empleadoId)
+        {
+            CompraId = compraId;
+            NumeroComprobante = numeroComprobante;
+            FechaCompra = fechaCompra;
+            TotalCompra = totalCompra;
+            ProveedorId = proveedorId;
+            EmpleadoId = empleadoId;
+        }
     }
 }
